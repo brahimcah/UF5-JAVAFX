@@ -1,17 +1,14 @@
-package com.brahimcah.uf5javafx;
-
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.util.*;
 
-public class CalcDate {
+public class Main {
+    public static void main(String[] args) throws Exception {
+        // Your code here!
 
-    public static void main(String[] args) {
-        LocalTime now = LocalTime.from(LocalDate.now());
-        System.out.println(now);
-
-        LocalDateTime ahora2 = LocalDateTime.from(LocalDate.now());
-        System.out.println(ahora2);
+        LocalDate date = LocalDate.now();
+        System.out.println(date);
+        DateTimeFormatter datetimeformat = DateTimeFormatter.ofPattern("dd-MM-yyyy");
+        System.out.println((String)datetimeformat.format(date));
     }
-}
 
