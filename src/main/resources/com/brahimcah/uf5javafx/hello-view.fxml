@@ -11,8 +11,6 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
     </padding>
 
-   <DatePicker />
-    <Button onAction="#onHelloButtonClick" text="Calcular día de la semana" />
-
-    <Label fx:id="NomDia" />
+    <DatePicker fx:id="myDatePicker" layoutX="213.0" layoutY="142.0" onAction="#getDate" promptText="Enter a date" />
+    <Label fx:id="myLabel" alignment="CENTER" layoutY="47.0" prefHeight="17.0" prefWidth="600.0" text="Label"></Label>
 </VBox>
