@@ -13,13 +13,14 @@ public class NovaDate {
     String dia;
 
     public NovaDate(String dia) {
-        dia = dia;
+        this.dia = dia;
     }
     public String getDia() {
-        return dia;
+        return this.dia;
     }
 
     public String diaSemana(){
+
         String Valor_dia = null;
         SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
         Date fechaActual = null;
@@ -33,6 +34,7 @@ public class NovaDate {
         GregorianCalendar fechaCalendario = new GregorianCalendar();
         fechaCalendario.setTime(fechaActual);
         int diaSemana = fechaCalendario.get(Calendar.DAY_OF_WEEK);
+        System.out.println(diaSemana);
         if (diaSemana == 1) {
             Valor_dia = "Diumenge";
         } else if (diaSemana == 2) {
@@ -52,6 +54,6 @@ public class NovaDate {
     }
 
     public void setDia(String dia) {
-        dia = dia;
+        this.dia = dia;
     }
 }
