@@ -7,6 +7,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * @author ianchahbounielkammouni
+ * @alumne 2n DAM
+ * @institut INSPLADELESTANY
+ * @CURS 2021-22
+ */
+
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
