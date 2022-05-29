@@ -16,9 +16,9 @@ public class HelloController {
     public void getDate(ActionEvent event) {
 
         LocalDate myDate = myDatePicker.getValue();
-        String myFormattedDate = myDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
+        String dia = myDate.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"));
 
-        String dia= "2000-07-16";
+
         NovaDate novaDate = new NovaDate(dia);
         String a = novaDate.diaSemana();
         myLabel.setText(a);
