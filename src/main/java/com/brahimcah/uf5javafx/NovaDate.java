@@ -33,22 +33,35 @@ public class NovaDate {
         }
         GregorianCalendar fechaCalendario = new GregorianCalendar();
         fechaCalendario.setTime(fechaActual);
-        int diaSemana = fechaCalendario.get(Calendar.DAY_OF_WEEK);
-        System.out.println(diaSemana);
-        if (diaSemana == 1) {
-            Valor_dia = "Diumenge";
-        } else if (diaSemana == 2) {
-            Valor_dia = "Dilluns";
-        } else if (diaSemana == 3) {
-            Valor_dia = "Dimarts";
-        } else if (diaSemana == 4) {
-            Valor_dia = "Dimecres";
-        } else if (diaSemana == 5) {
-            Valor_dia = "Dijous";
-        } else if (diaSemana == 6) {
-            Valor_dia = "Divendres";
-        } else if (diaSemana == 7) {
-            Valor_dia = "Dissabte";
+        var diaSemana = fechaCalendario.get(Calendar.DAY_OF_WEEK);
+
+        /**
+         * El switch el que ens adjuadar es amb la variable diaSemana segons el resultat numeric
+         * que obtingui pugui saber quin dia de la semana es i ho guaradar en la variabla tipo
+         * String Valor_dia el qual despres el retornem
+         */
+        switch(diaSemana) {
+            case 1:
+                Valor_dia="Diumenge";
+                break;
+            case 2:
+                Valor_dia="Dilluns";
+                break;
+            case 3:
+                Valor_dia="Dimarts";
+                break;
+            case 4:
+                Valor_dia="Dimecres";
+                break;
+            case 5:
+                Valor_dia="Dijous";
+                break;
+            case 6:
+                Valor_dia="Divendres";
+                break;
+            case 7:
+                Valor_dia="Dissabte";
+                break;
         }
         return Valor_dia;
     }

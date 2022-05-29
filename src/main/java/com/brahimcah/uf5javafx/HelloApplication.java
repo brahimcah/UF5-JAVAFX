@@ -10,11 +10,15 @@ import java.io.IOException;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
+        //Indiquem on esta el archiu FXML el cual indica els parametres de
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        //Indiquem les mesures de la nostra finestre.
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        //Indiquem el nom que sortira en en la part superior de la finestre
         stage.setTitle("Calculadora dia de la semana");
         stage.setScene(scene);
         stage.show();
+
     }
 
     public static void main(String[] args) {
